@@ -191,7 +191,6 @@
           </div>
           <h3 class="news-card__title">${n.title}</h3>
           <p class="news-card__excerpt">${n.excerpt}</p>
-          <span class="news-card__more">Ler mais →</span>
         </div>
       </article>
     `).join('');
