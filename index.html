@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="RoboGreen — Robótica e Automação na Redução do Impacto Ambiental. Tecnologia aliada à sustentabilidade." />
+  <title>RoboGreen — Robótica e Automação na Sustentabilidade</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- ============ HEADER ============ -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#hero" class="logo" aria-label="RoboGreen — Início">
+        <span class="logo__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="9"/>
+            <path d="M8 12h8M12 8v8"/>
+          </svg>
+        </span>
+        <span class="logo__text">Robo<span>Green</span></span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navegação principal">
+        <ul class="nav__list">
+          <li><a href="#intro" class="nav__link">Introdução</a></li>
+          <li><a href="#aplicacoes" class="nav__link">Aplicações</a></li>
+          <li><a href="#agricultura" class="nav__link">Agricultura</a></li>
+          <li><a href="#industria" class="nav__link">Indústria</a></li>
+          <li><a href="#futuro" class="nav__link">Futuro</a></li>
+          <li><a href="#noticias" class="nav__link">Notícias</a></li>
+          <li><a href="#quiz" class="nav__link">Quiz</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema claro/escuro" title="Alternar tema">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false" aria-controls="nav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__grid-bg" aria-hidden="true"></div>
+      <div class="hero__glow" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__content reveal">
+          <span class="badge">// Agrinho 2026 · Tecnologia Verde</span>
+          <h1 class="hero__title">
+            Robótica & Automação <br/>
+            <span class="gradient-text">para um Futuro Sustentável</span>
+          </h1>
+          <p class="hero__subtitle">
+            Máquinas inteligentes, sensores e drones unem precisão e responsabilidade ambiental — produzindo mais, desperdiçando menos e preservando os recursos do planeta.
+          </p>
+          <div class="hero__cta">
+            <a href="#intro" class="btn btn--primary">Explorar conteúdo</a>
+            <a href="#quiz" class="btn btn--ghost">Testar conhecimento</a>
+          </div>
+
+          <div class="hero__stats">
+            <div class="stat">
+              <span class="stat__num">✓</span>
+              <span class="stat__label">Uso mais eficiente da água</span>
+            </div>
+
+            <div class="stat">
+              <span class="stat__num">✓</span>
+              <span class="stat__label">Aplicação precisa de defensivos</span>
+            </div>
+
+            <div class="stat">
+              <span class="stat__num">✓</span>
+              <span class="stat__label">Redução de desperdícios</span>
+            </div>
+
+            <div class="stat">
+              <span class="stat__num">✓</span>
+              <span class="stat__label">Menor impacto ambiental</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal" aria-hidden="true">
+          <div class="orb">
+            <svg viewBox="0 0 400 400">
+              <defs>
+                <radialGradient id="g1" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#00f0ff" stop-opacity="0.9"/>
+                  <stop offset="60%" stop-color="#0a3d62" stop-opacity="0.4"/>
+                  <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+              <circle cx="200" cy="200" r="180" fill="url(#g1)"/>
+              <circle cx="200" cy="200" r="120" fill="none" stroke="#00f0ff" stroke-width="1" opacity="0.5"/>
+              <circle cx="200" cy="200" r="160" fill="none" stroke="#aaff00" stroke-width="1" opacity="0.3"/>
+              <g stroke="#00f0ff" stroke-width="1" opacity="0.6" fill="none">
+                <path d="M200 40 L200 360 M40 200 L360 200"/>
+              </g>
+              <g fill="#aaff00">
+                <circle cx="320" cy="200" r="4"/>
+                <circle cx="200" cy="80" r="3"/>
+                <circle cx="100" cy="280" r="3"/>
+              </g>
+            </svg>
+            <div class="orb__core"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INTRODUÇÃO ============ -->
+    <section class="section" id="intro">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__tag">01 · Contexto</span>
+          <h2 class="section__title">Introdução</h2>
+        </header>
+        <div class="grid grid--2">
+          <article class="card reveal">
+            <h3>O desafio do nosso tempo</h3>
+            <p>O crescimento da população mundial aumenta a demanda por alimentos, energia e recursos naturais. Ao mesmo tempo, preservar o meio ambiente tornou-se prioridade global. Nesse cenário, a robótica e a automação surgem como aliadas estratégicas para aumentar a produtividade e reduzir os impactos das atividades humanas.</p>
+          </article>
+          <article class="card reveal">
+            <h3>O que são essas tecnologias?</h3>
+            <p><strong class="hl">Robótica</strong> é a criação de máquinas capazes de realizar tarefas de forma automática ou semiautomática. <strong class="hl">Automação</strong> utiliza tecnologias para controlar processos com mínima intervenção humana. Juntas, estão presentes na agricultura, indústria, logística e proteção ambiental — reduzindo desperdícios, economizando recursos e diminuindo a poluição.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ APLICAÇÕES ============ -->
+    <section class="section section--alt" id="aplicacoes">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__tag">02 · Conservação</span>
+          <h2 class="section__title">Aplicações na Preservação Ambiental</h2>
+          <p class="section__lead">Sensores, drones e robôs ampliam os olhos da ciência e protegem ecossistemas inteiros.</p>
+        </header>
+
+        <div class="grid grid--3">
+          <article class="feature reveal">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l9-9 9 9M5 10v10h14V10"/></svg>
+            </div>
+            <h3>Monitoramento por Drones</h3>
+            <p>Câmeras de alta resolução sobrevoam grandes áreas em pouco tempo, identificando queimadas, desmatamento ilegal e degradação ambiental.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/></svg>
+            </div>
+            <h3>Sensores Inteligentes</h3>
+            <p>Em rios, lagos e florestas, coletam dados contínuos sobre temperatura, umidade, qualidade da água e poluentes — apoiando decisões rápidas.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg>
+            </div>
+            <h3>Robôs em Áreas de Risco</h3>
+            <p>Atuam em inspeções ambientais, áreas contaminadas e até reflorestamento — realizando o plantio automatizado de sementes em regiões degradadas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ AGRICULTURA ============ -->
+    <section class="section" id="agricultura">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__tag">03 · Campo Inteligente</span>
+          <h2 class="section__title">Agricultura de Precisão e Produção Sustentável</h2>
+        </header>
+
+        <div class="split">
+          <div class="split__text reveal">
+            <p>A agricultura é um dos setores mais beneficiados pela robótica. Com a <strong class="hl">agricultura de precisão</strong>, cada área da lavoura é monitorada individualmente, aplicando recursos apenas onde realmente necessários.</p>
+            <ul class="checklist">
+              <li>Sensores medem umidade, temperatura e nutrientes do solo</li>
+              <li>Sistemas automatizados controlam irrigação e evitam desperdício</li>
+              <li>Drones mapeiam plantações e identificam pragas e doenças</li>
+              <li>Robôs aplicam defensivos apenas em pontos necessários</li>
+              <li>Máquinas leves reduzem a compactação do solo</li>
+            </ul>
+          </div>
+          <div class="split__visual reveal">
+            <div class="tech-panel">
+              <div class="tech-panel__header">
+                <span class="dot dot--green"></span>
+                <span class="dot dot--cyan"></span>
+                <span class="dot dot--gray"></span>
+                <span class="tech-panel__title">field_monitor.sys</span>
+              </div>
+              <div class="tech-panel__body">
+                <div class="metric"><span>Umidade do solo</span><span class="metric__val">68%</span></div>
+                <div class="bar"><span style="width:68%"></span></div>
+                <div class="metric"><span>Temperatura</span><span class="metric__val">24.3°C</span></div>
+                <div class="bar"><span style="width:55%"></span></div>
+                <div class="metric"><span>Irrigação ativa</span><span class="metric__val pulse-text">ON</span></div>
+                <div class="bar"><span style="width:42%"></span></div>
+                <div class="metric"><span>Defensivos aplicados</span><span class="metric__val">-45%</span></div>
+                <div class="bar"><span style="width:30%"></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INDÚSTRIA ============ -->
+    <section class="section section--alt" id="industria">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__tag">04 · Indústria 4.0</span>
+          <h2 class="section__title">Automação Industrial e Redução de Desperdícios</h2>
+        </header>
+
+        <div class="grid grid--3">
+          <article class="card card--hover reveal">
+            <h3>Processos em Tempo Real</h3>
+            <p>Sistemas inteligentes monitoram a produção, reduzem falhas e aproveitam apenas a matéria-prima necessária para cada item produzido.</p>
+          </article>
+          <article class="card card--hover reveal">
+            <h3>Detecção de Perdas</h3>
+            <p>Sensores identificam vazamentos, desperdícios de energia e emissões de poluentes — possibilitando correções imediatas.</p>
+          </article>
+          <article class="card card--hover reveal">
+            <h3>Reciclagem Automatizada</h3>
+            <p>Robôs auxiliam na separação e reciclagem de resíduos, aumentando a eficiência do processo e reduzindo o envio de lixo a aterros.</p>
+          </article>
+          <article class="card card--hover reveal">
+            <h3>Energia Renovável</h3>
+            <p>Equipamentos movidos a eletricidade limpa contribuem para a redução das emissões de gases do efeito estufa.</p>
+          </article>
+          <article class="card card--hover reveal">
+            <h3>Eficiência Energética</h3>
+            <p>Algoritmos otimizam consumo de fábricas inteiras, ajustando carga, iluminação e maquinário em tempo real.</p>
+          </article>
+          <article class="card card--hover reveal">
+            <h3>Cadeia Sustentável</h3>
+            <p>Rastreamento automatizado garante transparência e origem responsável das matérias-primas utilizadas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FUTURO ============ -->
+    <section class="section" id="futuro">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__tag">05 · Horizonte</span>
+          <h2 class="section__title">Benefícios, Desafios e Perspectivas</h2>
+        </header>
+
+        <div class="grid grid--3">
+          <article class="pillar pillar--green reveal">
+            <h3>Benefícios</h3>
+            <ul>
+              <li>Menor consumo de água</li>
+              <li>Redução de agrotóxicos</li>
+              <li>Maior eficiência energética</li>
+              <li>Menos desperdício</li>
+              <li>Baixa emissão de poluentes</li>
+            </ul>
+          </article>
+          <article class="pillar pillar--cyan reveal">
+            <h3>Desafios</h3>
+            <ul>
+              <li>Alto custo inicial dos equipamentos</li>
+              <li>Acesso restrito a pequenos produtores</li>
+              <li>Capacitação técnica especializada</li>
+              <li>Descarte de eletrônicos</li>
+              <li>Adaptação cultural ao novo modelo</li>
+            </ul>
+          </article>
+          <article class="pillar pillar--purple reveal">
+            <h3>Futuro</h3>
+            <ul>
+              <li>Fazendas totalmente automatizadas</li>
+              <li>Irrigação inteligente em larga escala</li>
+              <li>Drones de reflorestamento</li>
+              <li>Fábricas com emissão quase zero</li>
+              <li>Economia circular tecnológica</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ NOTÍCIAS ============ -->
+    <section class="section section--alt" id="noticias">
+      <div class="container">
+        <header class="section__head reveal">
+          <span class="section__tag">06 · Feed</span>
+          <h2 class="section__title">Inovações em Tempo Real</h2>
+          <p class="section__lead">Últimas notícias sobre robótica verde, agricultura inteligente e automação sustentável.</p>
+        </header>
+        <div class="news-grid" id="newsGrid" aria-live="polite">
+          <!-- cards inseridos via JS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ QUIZ ============ -->
+    <section class="section" id="quiz">
+      <div class="container container--narrow">
+        <header class="section__head reveal">
+          <span class="section__tag">07 · Conhecimento</span>
+          <h2 class="section__title">Quiz Educativo</h2>
+          <p class="section__lead">Teste o que você aprendeu sobre robótica e sustentabilidade.</p>
+        </header>
+
+        <div class="quiz reveal" id="quiz-app">
+          <div class="quiz__progress"><span id="quizProgress"></span></div>
+          <div class="quiz__body" id="quizBody"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONCLUSÃO ============ -->
+    <section class="section section--conclusion" id="conclusao">
+      <div class="container container--narrow reveal">
+        <h2 class="section__title text-center">Conclusão</h2>
+        <p class="conclusion-text">
+          A robótica e a automação estão se tornando importantes aliadas na redução dos impactos ambientais causados pelas atividades humanas. Seja na agricultura, na indústria ou no monitoramento ambiental, essas tecnologias permitem utilizar os recursos naturais com mais eficiência, reduzindo desperdícios e ampliando a sustentabilidade.
+        </p>
+        <p class="conclusion-text">
+          A combinação entre <span class="gradient-text">inovação tecnológica</span> e <span class="gradient-text">responsabilidade ambiental</span> representa um caminho promissor para garantir produção para a sociedade sem comprometer os recursos das futuras gerações.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <span class="logo__text">Robo<span>Green</span></span>
+        <p>Tecnologia a serviço do planeta. Site feito por Rafael.</p>
+      </div>
+      <div class="footer__col">
+        <h4>Navegar</h4>
+        <ul>
+          <li><a href="#intro">Introdução</a></li>
+          <li><a href="#aplicacoes">Aplicações</a></li>
+          <li><a href="#noticias">Notícias</a></li>
+          <li><a href="#quiz">Quiz</a></li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Sobre</h4>
+        <ul>
+          <li>Robótica Verde</li>
+          <li>Automação Sustentável</li>
+          <li>Agricultura de Precisão</li>
+        </ul>
+      </div>
+      <div class="footer__col">
+        <h4>Fontes</h4>
+
+        <ul>
+          <li>
+            <a href="https://www.embrapa.br" target="_blank">
+              EMBRAPA
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.fao.org" target="_blank">
+              FAO
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.unep.org" target="_blank">
+              ONU Meio Ambiente
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.dji.com/agriculture" target="_blank">
+              DJI Agriculture
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; <span id="year"></span> - Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
